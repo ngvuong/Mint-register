@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mint Register</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <body>
+    <nav>
+      <div class="existing-account">
+        <div class="account-aside">
+          <div class="existing">Already have an Intuit account?</div>
+          <span class="recover">
+            <a href="#">I forgot my User ID or Password</a>
+          </span>
+        </div>
+
+        <div class="sign-in">
+          <button class="sign-in-btn button">
+            <span class="lock-icon"></span>
+            Sign In
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <header>
+      <div class="names-logos">
+        <div class="logo-container">
+          <a href="#" class="logo"></a>
+        </div>
+        <div class="services-container">
+          <ul class="services">
+            <li id="mint">
+              <span id="mint-logo"></span>
+              mint
+            </li>
+            <li id="quickbooks">
+              <span id="quickbookts-logo"></span>
+              quickbooks
+            </li>
+            <li id="turbotax">
+              <span id="turbotax-logo"></span>
+              turbotax
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="register-form">
+        <div class="form-header">
+          <p class="header-main">Create an Intuit account</p>
+          <span class="header-message">
+            <p class="message">
+              One account for everything Intuit, including Mint.
+            </p>
+            <a href="#" class="learn-more">Learn more</a>
+          </span>
+        </div>
+
+        <form action="#" medthod="post" class="register">
+          <fieldset class="email-field">
+            <label for="email" class="field-label">
+              Email address
+              <br />
+              <input type="email" id="email" name="email" />
+            </label>
+          </fieldset>
+
+          <fieldset class="phone-field">
+            <label for="phone" class="field-label">
+              Phone (recommended)
+              <br />
+              <input type="tel" name="phone" id="phone" />
+            </label>
+          </fieldset>
+
+          <fieldset class="password-field">
+            <label for="password" class="field-label">
+              Password
+              <br />
+              <input type="password" name="password" id="password" />
+            </label>
+            <span class="password-lock-icon"></span>
+          </fieldset>
+
+          <fieldset class="submit">
+            <button class="create-account-btn button">
+              <span class="lock-icon"></span>
+              <span id="create-account">Create Account</span>
+            </button>
+          </fieldset>
+        </form>
+
+        <div class="terms-conditions">
+          <p id="terms">
+            By clicking Create Account, you agree to our
+            <span class="link">Terms</span> and have read and acknowledge our
+            <span class="link">Global Privacy Statement</span>.
+          </p>
+        </div>
+      </section>
+
+      <div class="captcha">
+        <span
+          >Invisible reCAPTCHA by Google
+          <a href="#" class="link"> Privacy Policy</a> and
+          <span class="link">Terms of Use.</span></span
+        >
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer-links">
+        <ul class="links-list">
+          <li id="legal"><a href="#">Legal</a></li>
+          <li id="privacy"><a href="#">Privacy</a></li>
+          <li id="security"><a href="#">Security</a></li>
+        </ul>
+      </div>
+
+      <div class="copy-right">
+        <span class="cw-trademark">
+          © 2021 Intuit, Inc. All rights reserved. Intuit, QuickBooks, QB,
+          TurboTax, ProConnect and Mint are registered trademarks of Intuit Inc.
+        </span>
+        <div class="terms-statement">
+          Terms and conditions, features, support, pricing, and service options
+          subject to change without notice.
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
