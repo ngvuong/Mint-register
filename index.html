@@ -33,41 +33,43 @@
         </div>
         <div class="services-container">
           <ul class="services">
-            <li id="mint">
-              <span id="mint-logo"></span>
-              mint
+            <li>
+              <span id="mint-icon" class="service-icon"></span>
+              <span id="mint"></span>
             </li>
-            <li id="quickbooks">
-              <span id="quickbookts-logo"></span>
-              quickbooks
+            <li>
+              <span id="quickbooks-icon" class="service-icon"></span>
+              <span id="quickbooks"></span>
             </li>
-            <li id="turbotax">
-              <span id="turbotax-logo"></span>
-              turbotax
+            <li>
+              <span id="turbotax-icon" class="service-icon"></span>
+              <span id="turbotax"></span>
             </li>
           </ul>
         </div>
       </div>
     </header>
 
-    <main>
+    <main class="main-content">
       <section class="register-form">
         <div class="form-header">
           <p class="header-main">Create an Intuit account</p>
-          <span class="header-message">
+          <div class="header-message">
             <p class="message">
               One account for everything Intuit, including Mint.
             </p>
             <a href="#" class="learn-more">Learn more</a>
-          </span>
+          </div>
         </div>
 
-        <form action="#" medthod="post" class="register">
+        <form action="#" method="post" class="register">
           <fieldset class="email-field">
             <label for="email" class="field-label">
               Email address
               <br />
-              <input type="email" id="email" name="email" />
+              <div class="text-input-field">
+                <input type="email" id="email" name="email" />
+              </div>
             </label>
           </fieldset>
 
@@ -75,25 +77,32 @@
             <label for="phone" class="field-label">
               Phone (recommended)
               <br />
-              <input type="tel" name="phone" id="phone" />
+              <div class="text-input-field">
+                <input type="tel" name="phone" id="phone" />
+              </div>
             </label>
+            <span id="phone-msg"
+              >Standard call, messaging or data rates may apply.</span
+            >
           </fieldset>
 
           <fieldset class="password-field">
             <label for="password" class="field-label">
               Password
               <br />
-              <input type="password" name="password" id="password" />
+              <div class="text-input-field">
+                <input type="password" name="password" id="password" />
+              </div>
             </label>
             <span class="password-lock-icon"></span>
           </fieldset>
 
-          <fieldset class="submit">
+          <div class="submit">
             <button class="create-account-btn button">
               <span class="lock-icon"></span>
               <span id="create-account">Create Account</span>
             </button>
-          </fieldset>
+          </div>
         </form>
 
         <div class="terms-conditions">
@@ -109,12 +118,12 @@
         <span
           >Invisible reCAPTCHA by Google
           <a href="#" class="link"> Privacy Policy</a> and
-          <span class="link">Terms of Use.</span></span
-        >
+          <span class="link"><a href="#" class="link">Terms of Use</a>.</span>
+        </span>
       </div>
     </main>
 
-    <footer>
+    <footer class="footer-container">
       <div class="footer-links">
         <ul class="links-list">
           <li id="legal"><a href="#">Legal</a></li>

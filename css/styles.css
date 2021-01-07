@@ -1,31 +1,36 @@
-.logo {
-  display: block;
-  width: 118px;
-  height: 35px;
-  background-image: url(assets/intuit.png);
-}
-
-.services {
-  color: #6c6d73;
-}
-
-.existing-account-login {
-}
-
-.account-aside {
+body {
+  margin: 0;
+  box-sizing: border-box;
+  font: 12px "AvenirNext", Avenir, "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  line-height: 1.5;
+  background: #eceef1;
 }
 
 #mint {
+  display: inline-block;
+  background: url("assets/mint.svg") no-repeat;
+  width: 37px;
+  height: 20px;
 }
-#mint-logo {
+#mint-icon {
+  background: url("assets/mint-icon.svg");
 }
 #quickbooks {
+  background: url("assets/quickbooks.svg") no-repeat;
+  width: 98px;
+  height: 22px;
 }
-#quickbookts-logo {
+#quickbooks-icon {
+  background: url("assets/quickbooks-icon.svg");
 }
 #turbotax {
+  background: url("assets/turbotax.svg") no-repeat;
+  width: 74px;
+  height: 22px;
 }
-#turbotax-logo {
+#turbotax-icon {
+  background: url("assets/turbotax-icon.svg");
 }
 #email {
 }
@@ -43,37 +48,97 @@
 }
 #security {
 }
+
+/* nav */
+
 .existing-account {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  box-sizing: border-box;
+  height: 60px;
+  padding: 10px 30px;
 }
-.account-aside {
+
+.account-aside,
+.sign-in {
+  margin-left: 10px;
 }
 .existing {
+  color: #505050;
 }
 .recover {
 }
 .sign-in {
 }
-.sign-in-btn.button {
+.sign-in-btn {
+  padding: 0 20px;
 }
 .lock-icon {
+  height: 20px;
+  width: 16px;
+  margin-right: 6px;
+  vertical-align: text-top;
+  display: inline-block;
+  background-image: url(assets/lock-icon.svg);
+  /* background-size: contain; */
+  /* background-repeat: no-repeat; */
 }
+
+/* header */
+
 .names-logos {
 }
 .logo-container {
+  padding: 20px 0;
+  text-align: center;
 }
 .logo {
+  display: block;
+  width: 118px;
+  height: 35px;
+  background-image: url(assets/intuit.png);
+  margin: 0 auto;
 }
 .services-container {
+  height: 38px;
+  padding-bottom: 4px;
+  text-align: center;
 }
-.services {
+.services span {
+  display: inline-block;
 }
+
+.service-icon {
+  display: inline-block;
+  margin-right: 4px;
+  width: 23px;
+  height: 23px;
+}
+
+/* main, register form */
+
+.main-content {
+  width: 380px;
+  padding: 30px;
+  border: 1px solid #c7c7c7;
+  border-radius: 2px;
+  margin: auto;
+  box-sizing: border-box;
+}
+
+fieldset {
+}
+
 .register-form {
 }
 .form-header {
+  padding-bottom: 20px;
 }
 .header-main {
 }
 .header-message {
+  padding-top: 20px;
 }
 .message {
 }
@@ -84,30 +149,87 @@
 .email-field {
 }
 .field-label {
+  padding-bottom: 6px;
 }
+
+.text-input-field {
+  width: 320px;
+  min-width: 160px;
+  height: 34px;
+}
+
+.text-input-field input {
+  padding: 0 6px 0 8px;
+}
+
 .phone-field {
 }
+
+#phone-msg {
+  padding: 5px 0;
+}
+
 .password-field {
 }
 .password-lock-icon {
 }
 .submit {
+  padding-bottom: 10px;
 }
 .create-account-btn.button {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
 }
 .terms-conditions {
+  padding-top: 10px;
 }
-.link {
-}
+
 .captcha {
+  margin: 32px -30px -30px -30px;
+  padding: 16px;
+  text-align: center;
 }
+
+/* footer */
+
+.footer-container {
+  width: 90%;
+  text-align: center;
+  padding: 20px 0;
+  margin: 0 auto;
+}
+
 .footer-links {
 }
 .links-list {
+  padding-top: 5px;
 }
 .copy-right {
 }
 .cw-trademark {
 }
 .terms-statement {
+}
+
+/* misc */
+
+.button {
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  display: inline-block;
+}
+
+a {
+  color: #0077c5;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
