@@ -19,7 +19,7 @@
 
         <div class="sign-in">
           <button class="sign-in-btn button">
-            <span class="lock-icon"></span>
+            <span class="lock-icon icons"></span>
             Sign In
           </button>
         </div>
@@ -32,17 +32,17 @@
           <a href="#" class="logo"></a>
         </div>
         <div class="services-container">
-          <ul class="services">
+          <ul class="services horizontal-list">
             <li>
-              <span id="mint-icon" class="service-icon"></span>
+              <span id="mint-icon" class="service-icon icons"></span>
               <span id="mint"></span>
             </li>
             <li>
-              <span id="quickbooks-icon" class="service-icon"></span>
+              <span id="quickbooks-icon" class="service-icon icons"></span>
               <span id="quickbooks"></span>
             </li>
             <li>
-              <span id="turbotax-icon" class="service-icon"></span>
+              <span id="turbotax-icon" class="service-icon icons"></span>
               <span id="turbotax"></span>
             </li>
           </ul>
@@ -64,42 +64,33 @@
 
         <form action="#" method="post" class="register">
           <fieldset class="email-field">
-            <label for="email" class="field-label">
-              Email address
-              <br />
-              <div class="text-input-field">
-                <input type="email" id="email" name="email" />
-              </div>
-            </label>
+            <label for="email" class="field-label"> Email address </label>
+            <div class="text-input-field">
+              <input type="email" id="email" name="email" />
+            </div>
           </fieldset>
 
           <fieldset class="phone-field">
-            <label for="phone" class="field-label">
-              Phone (recommended)
-              <br />
-              <div class="text-input-field">
-                <input type="tel" name="phone" id="phone" />
-              </div>
-            </label>
-            <span id="phone-msg"
-              >Standard call, messaging or data rates may apply.</span
-            >
+            <label for="phone" class="field-label"> Phone (recommended) </label>
+            <div class="text-input-field">
+              <input type="tel" name="phone" id="phone" />
+            </div>
+            <span id="phone-msg">
+              Standard call, messaging or data rates may apply.
+            </span>
           </fieldset>
 
           <fieldset class="password-field">
-            <label for="password" class="field-label">
-              Password
-              <br />
-              <div class="text-input-field">
-                <input type="password" name="password" id="password" />
-              </div>
-            </label>
-            <span class="password-lock-icon"></span>
+            <label for="password" class="field-label"> Password </label>
+            <div class="text-input-field pass-input">
+              <input type="password" name="password" id="password" />
+              <span class="password-lock-icon icons"></span>
+            </div>
           </fieldset>
 
           <div class="submit">
             <button class="create-account-btn button">
-              <span class="lock-icon"></span>
+              <span class="lock-icon icons"></span>
               <span id="create-account">Create Account</span>
             </button>
           </div>
@@ -125,7 +116,7 @@
 
     <footer class="footer-container">
       <div class="footer-links">
-        <ul class="links-list">
+        <ul class="links-list horizontal-list">
           <li id="legal"><a href="#">Legal</a></li>
           <li id="privacy"><a href="#">Privacy</a></li>
           <li id="security"><a href="#">Security</a></li>
