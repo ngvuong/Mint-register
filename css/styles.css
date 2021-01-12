@@ -1,9 +1,8 @@
 body {
   background: #eceef1;
-  margin: 0;
 }
 
-body * {
+html * {
   margin: 0;
   box-sizing: border-box;
   font: 12px "AvenirNext", Avenir, "Helvetica Neue", Helvetica, Arial,
@@ -11,54 +10,13 @@ body * {
   line-height: 1.5;
 }
 
-#mint {
-  display: inline-block;
-  background: url("assets/mint.svg") no-repeat;
-  width: 37px;
-  height: 20px;
-}
-#mint-icon {
-  background: url("assets/mint-icon.svg");
-}
-#quickbooks {
-  background: url("assets/quickbooks.svg") no-repeat;
-  width: 98px;
-  height: 22px;
-}
-#quickbooks-icon {
-  background: url("assets/quickbooks-icon.svg");
-}
-#turbotax {
-  background: url("assets/turbotax.svg") no-repeat;
-  width: 74px;
-  height: 22px;
-}
-#turbotax-icon {
-  background: url("assets/turbotax-icon.svg");
-}
-#email {
-}
-#phone {
-}
-#password {
-}
-#create-account {
-}
-#terms {
-}
-#legal {
-}
-#privacy {
-}
-#security {
-}
-
 /* nav */
 
 .existing-account {
   display: flex;
   justify-content: flex-end;
-  align-items: center;
+  align-items: flex-start;
+  text-align: right;
   box-sizing: border-box;
   height: 60px;
   padding: 10px 30px;
@@ -77,16 +35,23 @@ body * {
 }
 .sign-in-btn {
   padding: 0 20px;
+  height: 34px;
+  color: white;
+  font-size: 1.125em;
+  line-height: normal;
+  cursor: pointer;
+  background: #0077c5;
+  border-radius: 4px;
+  border: 1px solid #4c4c4c;
 }
 .lock-icon {
   height: 20px;
   width: 16px;
   margin-right: 6px;
   vertical-align: text-top;
-  display: inline-block;
   background-image: url(assets/lock-icon.svg);
-  /* background-size: contain; */
-  /* background-repeat: no-repeat; */
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 /* header */
@@ -109,8 +74,17 @@ body * {
   padding-bottom: 4px;
   text-align: center;
 }
-.services span {
+
+.services * {
   display: inline-block;
+}
+
+.services li {
+  font-size: 12px;
+  margin-right: 9px;
+}
+.services li:last-child {
+  margin-right: 0;
 }
 
 .service-icon {
@@ -240,21 +214,66 @@ fieldset {
 .button {
 }
 
-ul {
-  list-style-type: none;
+.horizontal-list {
+  font-size: 0;
   padding: 0;
 }
 
-.horizontal-list > li,
+.horizontal-list li {
+  font-size: 0;
+}
+
 .icons {
   display: inline-block;
 }
 
 a {
+  cursor: pointer;
   color: #0077c5;
   text-decoration: none;
 }
 
 a:hover {
   text-decoration: underline;
+}
+
+#mint {
+  background: url("assets/mint.svg") no-repeat;
+  width: 37px;
+  height: 20px;
+}
+#mint-icon {
+  background: url("assets/mint-icon.svg");
+}
+#quickbooks {
+  background: url("assets/quickbooks.svg") no-repeat;
+  width: 98px;
+  height: 22px;
+}
+#quickbooks-icon {
+  background: url("assets/quickbooks-icon.svg");
+}
+#turbotax {
+  background: url("assets/turbotax.svg") no-repeat;
+  width: 74px;
+  height: 22px;
+}
+#turbotax-icon {
+  background: url("assets/turbotax-icon.svg");
+}
+#email {
+}
+#phone {
+}
+#password {
+}
+#create-account {
+}
+#terms {
+}
+#legal {
+}
+#privacy {
+}
+#security {
 }
