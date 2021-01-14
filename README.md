@@ -1,3 +1,5 @@
 # Mint-register
 
-Cloning Mint's registration form
+Cloning Mint's registration page
+
+Working with forms, lists.
