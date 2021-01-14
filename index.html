@@ -11,8 +11,9 @@
     <nav>
       <div class="existing-account">
         <div class="account-aside">
-          <div class="existing">Already have an Intuit account?</div>
-          <span class="recover">
+          <span>Already have an Intuit account?</span>
+          <br />
+          <span>
             <a href="#">I forgot my User ID or Password</a>
           </span>
         </div>
@@ -27,27 +28,25 @@
     </nav>
 
     <header>
-      <div class="names-logos">
-        <div class="logo-container">
-          <a href="#" class="logo"></a>
-        </div>
-        <div class="services-container">
-          <ul class="services">
-            <li>
-              <span id="mint-icon" class="service-icon icons"></span>
+      <div class="logo-container">
+        <a href="#" class="logo"></a>
+      </div>
+      <div class="services-container">
+        <ul class="services">
+          <li>
+            <span id="mint-icon" class="service-icon icons"></span>
 
-              <a id="mint"></a>
-            </li>
-            <li>
-              <span id="quickbooks-icon" class="service-icon icons"></span>
-              <a id="quickbooks"></a>
-            </li>
-            <li>
-              <span id="turbotax-icon" class="service-icon icons"></span>
-              <a id="turbotax"></a>
-            </li>
-          </ul>
-        </div>
+            <a id="mint"></a>
+          </li>
+          <li>
+            <span id="quickbooks-icon" class="service-icon icons"></span>
+            <a id="quickbooks"></a>
+          </li>
+          <li>
+            <span id="turbotax-icon" class="service-icon icons"></span>
+            <a id="turbotax"></a>
+          </li>
+        </ul>
       </div>
     </header>
 
@@ -56,14 +55,12 @@
         <div class="form-header">
           <p class="header-main">Create an Intuit account</p>
           <div class="header-sub">
-            <p class="sub-header">
-              One account for everything Intuit, including Mint.
-            </p>
-            <a href="#" class="learn-more">Learn more</a>
+            <p>One account for everything Intuit, including Mint.</p>
+            <a href="#">Learn more</a>
           </div>
         </div>
 
-        <form action="#" method="post" class="register">
+        <form action="#" method="post">
           <fieldset class="email-field">
             <label for="email" class="field-label"> Email address </label>
             <div class="text-input-field">
@@ -83,7 +80,7 @@
 
           <fieldset class="password-field">
             <label for="password" class="field-label"> Password </label>
-            <div class="text-input-field pass-input">
+            <div class="text-input-field">
               <input type="password" name="password" id="password" />
               <span class="password-lock-icon icons"></span>
             </div>
@@ -98,26 +95,26 @@
         </form>
 
         <div class="terms-conditions">
-          <span id="terms">
+          <span>
             By clicking Create Account, you agree to our
             <br />
-            <a class="link">Terms</a> and have read and acknowledge our
-            <a class="link">Global Privacy Statement</a>.
+            <a>Terms</a> and have read and acknowledge our
+            <a>Global Privacy Statement</a>.
           </span>
         </div>
       </section>
 
       <div class="captcha">
-        <span
-          >Invisible reCAPTCHA by Google
+        <span id="captcha-text">
+          Invisible reCAPTCHA by Google
           <a href="#" class="link"> Privacy Policy</a> and
-          <span class="link"><a href="#" class="link">Terms of Use</a>.</span>
+          <a href="#">Terms of Use</a>.
         </span>
       </div>
     </main>
 
     <footer class="footer-container">
-      <div class="footer-links">
+      <div>
         <ul class="links-list">
           <li id="legal"><a href="#">Legal</a></li>
           <li id="privacy"><a href="#">Privacy</a></li>
@@ -126,15 +123,18 @@
       </div>
 
       <div class="copy-right">
-        <span class="cw-trademark">
+        <span>
           © 2021 Intuit, Inc. All rights reserved. Intuit, QuickBooks, QB,
           TurboTax, ProConnect and Mint are registered trademarks of Intuit Inc.
         </span>
-        <div class="terms-statement">
+        <br />
+        <span>
           Terms and conditions, features, support, pricing, and service options
           subject to change without notice.
-        </div>
+        </span>
       </div>
     </footer>
+
+    <div class="privacy-settings">Privacy Settings</div>
   </body>
 </html>

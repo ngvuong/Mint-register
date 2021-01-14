@@ -8,9 +8,10 @@ body {
   font: 12px "AvenirNext", Avenir, "Helvetica Neue", Helvetica, Arial,
     sans-serif;
   line-height: 1.5;
+  color: #505050;
 }
 
-/* nav */
+/* Nav */
 
 .existing-account {
   display: flex;
@@ -26,13 +27,7 @@ body {
 .sign-in {
   margin-left: 10px;
 }
-.existing {
-  color: #505050;
-}
-.recover {
-}
-.sign-in {
-}
+
 .sign-in-btn {
   padding: 0 20px;
   height: 34px;
@@ -54,10 +49,8 @@ body {
   background-repeat: no-repeat;
 }
 
-/* header */
+/* Header */
 
-.names-logos {
-}
 .logo-container {
   padding: 20px 0;
   text-align: center;
@@ -102,6 +95,31 @@ body {
   height: 23px;
 }
 
+#mint {
+  background: url("assets/mint.svg") no-repeat;
+  width: 37px;
+  height: 20px;
+}
+#mint-icon {
+  background: url("assets/mint-icon.svg");
+}
+#quickbooks {
+  background: url("assets/quickbooks.svg") no-repeat;
+  width: 98px;
+  height: 22px;
+}
+#quickbooks-icon {
+  background: url("assets/quickbooks-icon.svg");
+}
+#turbotax {
+  background: url("assets/turbotax.svg") no-repeat;
+  width: 74px;
+  height: 22px;
+}
+#turbotax-icon {
+  background: url("assets/turbotax-icon.svg");
+}
+
 /* main, register form */
 
 .main-content {
@@ -112,9 +130,6 @@ body {
   border: 1px solid #c7c7c7;
   border-radius: 2px;
   margin: auto;
-}
-
-.register-form {
 }
 
 .form-header {
@@ -133,12 +148,6 @@ body {
   font-weight: 300;
   line-height: 1.2;
   padding-top: 20px;
-}
-.sub-header {
-}
-.learn-more {
-}
-.register {
 }
 
 fieldset {
@@ -176,7 +185,6 @@ fieldset {
 
 .phone-field {
   height: 115px;
-  /* padding-bottom: 27px; */
 }
 
 #phone-msg {
@@ -186,12 +194,10 @@ fieldset {
   color: #444;
 }
 
-.pass-input {
-}
-
 .password-field label {
   height: 34px;
 }
+
 .password-lock-icon {
   position: absolute;
   right: 1px;
@@ -202,6 +208,7 @@ fieldset {
   color: #0077c5;
   background: url(assets/pass-lock.png) no-repeat 0% 50% / 21px 21px;
 }
+
 .submit {
   padding-bottom: 10px;
 }
@@ -231,39 +238,51 @@ fieldset {
 }
 
 .captcha {
+  line-height: 1.5;
+  color: #8d9096;
+  background-color: #eceef1;
+  text-align: center;
   margin: 32px -30px -30px -30px;
   padding: 16px;
-  text-align: center;
 }
 
-/* footer */
+.captcha #captcha-text {
+  font-size: 10px;
+}
+
+/* Footer */
 
 .footer-container {
   width: 90%;
   text-align: center;
+  /* color: #505050; */
   padding: 20px 0;
   margin: 0 auto;
 }
 
-.footer-links {
-}
 .links-list {
+  list-style: none;
   padding-top: 5px;
-}
-.copy-right {
-}
-.cw-trademark {
-}
-.terms-statement {
+  padding-left: 0;
 }
 
-/* misc */
-
-.button {
+.links-list li {
+  display: inline-block;
 }
+
+.links-list li:not(:first-child) {
+  padding-left: 10px;
+}
+
+.links-list li a {
+  color: #505050;
+}
+
+/* Misc */
 
 .icons {
   display: inline-block;
+  cursor: pointer;
 }
 
 a {
@@ -276,43 +295,15 @@ a:hover {
   text-decoration: underline;
 }
 
-#mint {
-  background: url("assets/mint.svg") no-repeat;
-  width: 37px;
-  height: 20px;
-}
-#mint-icon {
-  background: url("assets/mint-icon.svg");
-}
-#quickbooks {
-  background: url("assets/quickbooks.svg") no-repeat;
-  width: 98px;
-  height: 22px;
-}
-#quickbooks-icon {
-  background: url("assets/quickbooks-icon.svg");
-}
-#turbotax {
-  background: url("assets/turbotax.svg") no-repeat;
-  width: 74px;
-  height: 22px;
-}
-#turbotax-icon {
-  background: url("assets/turbotax-icon.svg");
-}
-#email {
-}
-#phone {
-}
-#password {
-}
-#create-account {
-}
-#terms {
-}
-#legal {
-}
-#privacy {
-}
-#security {
+.privacy-settings {
+  position: fixed;
+  bottom: 0;
+  right: 5%;
+  font-size: 14px;
+  color: #fff;
+  background-color: #6b6c72;
+  padding: 10px 12px;
+  border-radius: 3px;
+  z-index: 100;
+  cursor: pointer;
 }
